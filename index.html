@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="navStyle.css">
+    <script src="jQueryv3.3.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="nav.js"></script>   
+    
+    <title>Nav</title>
+</head>
+<body>
+    <div id= "hola">Debes ingresar para ver mas contenido</div></br>
+    <div id="mi_nav">
+            <nav class="navbar navbar-dark bg-dark">
+                    <a class="navbar-brand" href="#">Navbar</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav my_nav">
+                            <a class="nav-item nav-link active" href="index.html">Home </a>
+                            
+                        </div>
+                        <div class="navbar-nav">
+                            <a class="nav-item nav-link pointer" id="login_modal"> Log In </a>
+                        </div>
+                    </div>
+                </nav>
+        
+    </div>
+    <div>
+            <div class="modal fade" id="singIn_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle"> SING IN </h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div  class="text-center" >
+                                <form  id="formulario3" method="post">
+                                    <table class="table table-dark table-striped ">
+                                        <tbody>
+                                            <tr>
+                                                <th scope="col">Username</th>
+                                                <td>
+                                                    <input type="text" id="username_f" class="form-control" value="Username">
+                                                    <div class="errores" id="mensaje1">Introduce tu correo</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="col">Password</th>
+                                                <td>
+                                                    <input type="password" id="password_f" class="form-control" value="Password">
+                                                    <div class="errores" id="mensaje2">Introduce tu password</div>
+                                                </td>    
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal" id="close_singin">Close</button>
+                                        <button type="button" id="log_in" class="btn btn-primary">Log In</button>
+                                    </div>
+                                </form>
+                            </div>   
+                        </div>
+                    </div>
+                </div>
+    </div>
+</body>
+</html>
